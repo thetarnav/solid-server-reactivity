@@ -5,6 +5,7 @@ import { createTrigger } from "@solid-primitives/trigger"
 
 describe(".", () => {
   test("we are on the server", () => {
+    // @ts-expect-error no document on server
     expect(typeof document).toBe("undefined")
   })
 
